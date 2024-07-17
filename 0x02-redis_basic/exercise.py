@@ -39,7 +39,7 @@ def call_history(method: Callable) -> Callable:
     return wrapper
 
 
-def replay(fn: Callable) -> None:
+def replay(method: Callable) -> None:
     """
     Shows how many times a function was called.
     """
