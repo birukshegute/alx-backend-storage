@@ -9,11 +9,11 @@ from functools import wraps
 from typing import Callable
 
 
-def track_get_page(method: Callable) -> Callable:
+def track_get_page(fn: Callable) -> Callable:
     """
     Tracks get_page
     """
-    @wraps(method)
+    @wraps(fn)
     def wrapper(url: str) -> str:
         """
         Tracks how many times get_page is called
