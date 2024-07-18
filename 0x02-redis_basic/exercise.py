@@ -10,7 +10,7 @@ from typing import Any, Callable, Optional, Union
 
 
 def count_calls(method: Callable) -> Callable:
-    """ 
+    """
     Counts calls
     """
     @wraps(method)
